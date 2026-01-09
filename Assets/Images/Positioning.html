@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS CSS_Positioning</title>
+    <link rel = "stylesheet" href = "./Positioning.css">
+    <header>
+        <Div class = "row w-80">
+             
+                <div a href = "logo"> Brandname </div>
+            <nav>
+        <ul>
+             
+          <li> <a  href = "Home"> Home </a> </li>
+            <li> <a href = "Product"> Product  </a> </li>
+            <li> <a href = "Pricing"> Pricing  </a> <li>
+          <li> <a href = "Contact"> Contact  </a> </li>
+            <li> <a href = "login"> Login  </a> </li>
+            <button>  Join Us  </button>
+
+        </ul>
+    </nav>
+        </div>
+
+    </header>
+</head>
+<body>
+    <container> 
+    <section> 
+<div class = "w-80 row"> 
+    <div class = "box1">
+                  <h5> <a href = "Join Us"> Join Us </a> </h5>
+            <h1> 25K + Students <br>
+                Trust Us </h1>
+                <h4> Every day brings with it a fresh set of learning possibilities. </h4>
+    
+    <div class="button-container">
+    <!-- First link button -->
+    <a href="https://example.com/page1" class="btn btn-primary" target="_blank" title="Get Quota Now">
+        Get Quota Now
+    </a>
+
+    <!-- Second link button -->
+    <a href="https://example.com/page2" class="btn btn-secondary" title="Learn More...">
+        Learn More.
+    </a>
+</div>
+    </div>
+
+    <div class = "box2">
+        <img src = "" alt ="" >       
+        </div>
+</div>
+    </section>
+    
+</container>
+
+<div class="card-container">
+    <div class="w-80  row"> 
+    <div class="card">
+        <img src= "./images/hat12.png" alt="Card 1">
+        <h3>Expert instruction</h3>
+        <p>The gradual accumulation of 
+            information about atomic and 
+            small-scale behaviour...</p>
+    </div>
+    <div class="card">
+        <img src= "./images/result.png" alt="Card 2">
+        <h3>Training Courses.</h3>
+        <p>The gradual accumulation of 
+            information about atomic and 
+            small-scale behaviour...</p>
+    </div>
+    <div class="card">
+        <img src="./images/result67.png" alt="Card 3">
+        <h3>Expert instruction</h3>
+        <p>The gradual accumulation of 
+            information about atomic and 
+            small-scale behaviour...</p>
+    </div>
+    </Div>
+</div>  
+        <div class="counter-container">
+    <div class="counter-box">
+        <div class="counter-number" id="customers">0</div>
+        <div class="counter-label">Customers</div>
+    </div>
+    <div class="counter-box">
+        <div class="counter-number" id="visitors">0</div>
+        <div class="counter-label">Visitors</div>
+    </div>
+    <div class="counter-box">
+        <div class="counter-number" id="countries">0</div>
+        <div class="counter-label">Countries</div>
+    </div>
+    <div class="counter-box">
+        <div class="counter-number" id="partners">0</div>
+        <div class="counter-label">Partners</div>
+    </div>
+    <script>
+// Simulated data (replace with real API or backend data)
+let stats = {
+    customers: 1200,
+    visitors: 5400,
+    countries: 3500,
+    partners: 1200
+};
+
+// Function to animate counting
+function animateCounter(id, target) {
+    let count = 0;
+    let speed = Math.ceil(target / 1000); // Adjust speed
+    let interval = setInterval(() => {
+        count += speed;
+        if (count >= target) {
+            count = target;
+            clearInterval(interval);
+        }
+        document.getElementById(id).textContent = count.toLocaleString();
+    }, 20);
+}
+
+// Start counters
+animateCounter("customers", stats.customers);
+animateCounter("visitors", stats.visitors);
+animateCounter("countries", stats.countries);
+animateCounter("partners", stats.partners);
+</script>
+</div>
+<div class="client-container">
+   <div class="w-80  row"> 
+    <div class = "box3">
+                  <h2> Every Client Matters </h2>
+            <p> Problems trying to resolve the conflict between<br> 
+                the two major realms of Classical physics:<br>
+                Newtonian mechanics </p>
+                
+    <h3><a href="" class="" title="Learn More...">
+        Learn More.
+    </a>
+</h3>
+</div>
+
+    <div class = "box4">
+        <img src = "" alt ="" >       
+        </div>
+</div>
+    </div>
+    </div>
+</container>
+        <div class="teacher-container">
+    <div class="w-80 grid-card row"> 
+          <h6>Practice Advice</h6>
+        <h2> Our Expert Teachers </h2>
+        <p>WProblems trying to resolve the conflict between 
+        the two major realms of Classical physics: Newtonian mechanics .</p>
+    <div class="newcard">
+        
+        <img src= "./images/stat1.jpg" alt="Card 1">
+        <div class="teacher-text">
+            <h3><a href="" class="" title="Training Courses">
+        Training Courses
+    </a>
+</h3>
+            <h6>Get Quality Education</h6>
+            <p>We focus on ergonomics and meeting 
+                you where you work. It's only a 
+                keystroke away.</p>
+                <h6> 20 Sales </h6>
+                <h5> $250 ... $6.48</h5>  
+                <a href="https://example.com/page2" class="btn btn-teacher" title="Learn More...">
+        Learn More.
+    </a>
+     
+    </div>
+    </div>
+    <div class="newcard">
+        <img src= "./images/stat3.jpg" alt="Card 2">
+        <h3><a href="" class="" title="Training Courses">
+        Training Courses
+    </a>
+</h3>
+        <h6>Get Quality Education</h6>
+            <p>We focus on ergonomics and meeting 
+                you where you work. It's only a 
+                keystroke away.</p>
+                <h6> 20 Sales </h6>
+                <h5> $250 ... $6.48</h5>  
+               <a href="https://example.com/page2" class="btn btn-teacher" title="Learn More...">
+        Learn More.
+    </a>
+     
+    </div>
+    <div class="newcard">
+        <img src="./images/stat2.jpg" alt="Card 3">
+        <h3><a href="" class="" title="Training Courses">
+        Training Courses
+    </a>
+</h3>
+        <h6>Get Quality Education</h6>
+            <p>We focus on ergonomics and meeting 
+                you where you work. It's only a 
+                keystroke away.</p>
+                <h6> 20 Sales </h6>
+                <h5> $250 ... $6.48</h5> 
+                <a href="https://example.com/page2" class="btn btn-teacher" title="Learn More...">
+        Learn More.
+    </a>
+
+     
+    </div>
+    </Div>
+</div>  
+
+<div class="Practice-container">
+    <div class="w-80  row"> 
+    <div class="Practice-card">
+        <img src= "./images/hat12.png" alt="Card 1">
+        <h3>Expert instruction</h3>
+        <p>The gradual accumulation of 
+            information about atomic and 
+            small-scale behaviour...</p>
+    </div>
+    <div class="Practice-card">
+        <img src= "./images/result.png" alt="Card 2">
+        <h3>Training Courses.</h3>
+        <p>The gradual accumulation of 
+            information about atomic and 
+            small-scale behaviour...</p>
+    </div>
+    <div class="Practice-card">
+        <img src="./images/result67.png" alt="Card 3">
+        <h3>Expert instruction</h3>
+        <p>The gradual accumulation of 
+            information about atomic and 
+            small-scale behaviour...</p>
+    </div>
+    </Div>
+</div>  
+</body>
+</html>
