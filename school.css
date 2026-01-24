@@ -1,0 +1,930 @@
+/*******
+Reset css *********/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+} 
+/*******
+Global *********/
+Html{
+    font-size: 20px;
+     scroll-behavior: smooth;
+}
+*{
+    text-decoration: none;
+
+}
+li{
+    list-style: none;
+
+}
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+h3{
+    font-size: 1.2rem;
+}
+h6{
+    font-size: 1rem;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+
+.row{
+    max-width: 80%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    column-gap: 50px;
+    padding: 15px 0;
+}
+
+.orange-text-color{
+   -color: rgba(231, 64, 64, 1);
+   
+}
+
+.orange-bg-color{
+   background-color: rgba(231, 64, 64, 1);
+}
+.green-bg-color{
+   background-color:  rgb(66, 128, 21);
+}
+
+.green-text-color{
+ color: rgba(150, 187, 124, 1);
+}
+
+/******* Header  *********/
+#home {
+  background-color: #f5f5f5;
+}
+.header {
+    position: sticky; 
+    top: 0;
+    background-color: rgba(250, 250, 250, 1);
+    box-shadow: rgb(133, 134, 55) 0px 20px 30px -10px;
+    z-index: 99;
+      
+}
+.header > div{
+    display: flex;
+    column-gap: 30px;
+ 
+}
+.navbar{
+    /* 1. Set a position other than static */
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-width: 80%;
+    width: 80%;
+    height: 50px;
+    background-color:   #f5f10ec7;
+    color: rgb(19, 18, 18);
+    padding: 10px 0;
+    z-index: 1000; /* 2. Assign a high z-index value */
+    border-width: 10px;
+    border-color:  #f5f10ec7;
+    box-shadow: rgba(211, 29, 29, 0.815) 0px 2px 4px, rgb(155, 8, 8) 0px 7px 13px -3px, rgb(184, 8, 8) 0px -3px 0px inset;
+    margin-top: 20px;
+    box-align: center;
+    margin-left:  100px;
+    margin-right: 0px;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    padding: 10px 0;
+    margin-bottom: 40px;
+}
+
+    
+  /* Basic button styling */
+    .green-outline-btn {
+        width: 100px;
+        height: 45px;
+        display: inline-block;
+        padding: 20px 10px;
+        font-size: 20px;
+        color: green; /* Green text */
+        border: 12px solid green; /* Green border */
+        background-color: transparent; /* Transparent background */
+        border-radius: 2px; /* Rounded corners */
+        cursor: pointer;
+        text-decoration: none; /* Remove underline for links */
+        transition: all 0.3s ease; /* Smooth hover effect */
+    }   
+
+    /* Hover effect */
+    .green-outline-btn:hover {
+        background-color: green; /* Fill green on hover */
+        color: white; /* White text on hover */
+    }
+    @media (max-width: 600px) {
+   .btn-green, .btn-white {
+       width: 100%;
+   }
+}
+    /* Responsive video container */
+        .video-container {
+            position: relative;
+         }
+
+        .video-container iframe {
+            position: absolute;
+            top: -110px;
+            left: 100px;
+            width: 468px;
+            height: 230px;
+            border: 0;
+            scroll-behavior: none;
+        }
+    .mynavbar{
+    /* 1. Set a position other than static */
+    position: fixed; 
+    top: 30px;
+    left: 0;
+    max-width: 80%;
+    width: 80%;
+    height: 50px;
+    background-color:  #f5f10ec7;
+    color: rgb(14, 13, 13);
+    padding: 10px 0;
+    z-index: 1000; /* 2. Assign a high z-index value */
+    border-width: 10px;
+    border-color: #f5f10ec7;
+    box-shadow: rgba(211, 29, 29, 0.815) 0px 2px 4px, rgb(155, 8, 8) 0px 7px 13px -3px, rgb(184, 8, 8) 0px -3px 0px inset;
+    margin-top: 50px;
+    box-align: center;
+    margin-left:  100px;
+    margin-right: 0px;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    padding: 10px 0;
+   
+}
+ 
+
+/*******
+Hero-section  *********/
+/* Common button style */
+.btn-green,
+.btn-white {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    border: 2px solid green;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Green button */
+.btn-green {
+    background-color: green;
+    color: white;
+}
+
+/* On hover: green becomes white */
+.btn-green:hover {
+    background-color: white;
+    color: green;
+}
+
+/* White button */
+.btn-white {
+    background-color: white;
+    color: green;
+}
+
+/* On hover: white becomes green */
+.btn-white:hover {
+    background-color: green;
+    color: white;
+}
+
+#hero-sectiom-wrapper{
+    position: relative;
+    height: 100vh;
+}
+.image-box{
+    position: relative;
+    
+     width: 50%;
+    height: 500px;
+    top: -60px;
+    flex: 1;
+    margin-top: 20px;
+
+}
+.img-1{
+    position: absolute; 
+    width: 380px;   
+}
+.img-2{
+    position: absolute;
+    width: 400px;
+    left: -70px;
+    top:   140px;
+   
+}
+.img-3{
+    position: absolute;
+       width: 450px;
+       top: 90px;
+       right: -10px;
+    
+}
+.img-4{
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    top: -10px;
+    bottom: 400px;
+    
+}
+.img-5{
+    position: absolute;
+    top: 110px;
+    left: -50px;
+}
+
+.hero-content{
+    width: 40%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+    top: 160px;
+  
+   
+}
+/*******
+hr-section  *********/
+.hr-section{
+    position: absolute;
+    bottom: 20px;
+    
+}
+.hr-card{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    border-color: blue;
+    border-radius: 20px;
+    background-color: rgba(204, 214, 214, 0.575);
+    box-shadow: rgba(211, 29, 29, 0.815) 0px 2px 4px, rgb(155, 8, 8) 0px 7px 13px -3px, rgb(184, 8, 8) 0px -3px 0px inset;
+    padding: 20px;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline for links */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+.icon-box{
+   width: 80px;
+   height: 80px;
+   border-radius: 50%;
+   padding: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.divider{
+    height: 3px;
+    width: 50px;
+   
+}
+
+/*******
+traffic-section *********/
+
+.traffic-section{
+   position: absolute;
+   width: 80%;
+   height: 400px;
+} 
+
+.traffic-card{
+    padding-top: 20px;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    box-shadow: rgba(211, 29, 29, 0.815) 0px 2px 4px, rgb(155, 8, 8) 0px 7px 13px -3px, rgb(184, 8, 8) 0px -3px 0px inset;
+    border-radius: 10px 2em 1em 4em / 0.5em 3em;
+    display: inline-block;
+    font-size:larger;
+    border-color: #0a3d62;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline for links */
+    transition: all 0.3s ease; /* Smooth hover effect */
+    width: 500px;
+    height: 200px;
+    background-color:  #F6BE00;
+    border: 12px solid #F6BE00;
+    border-radius: -10em / 16em;
+}
+
+
+ .traffic-card h2{
+    margin-bottom: 10px;
+ }
+ .green-text-color{
+    border-width: 20px;
+    border-color: #0a3d62;
+ }
+
+
+ /*******
+.admission-section *********/
+
+.admission-section{
+     position: absolute;
+     display: flex;
+     margin-bottom: 250px
+}
+/* Artboard (centering + scaling control) */
+.admission-artboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* GROUP CANVAS */
+.my-image-box {
+  position: relative;
+  width: 420px;     /* DESIGN WIDTH */
+  height: 420px;    /* DESIGN HEIGHT */
+  flex-shrink: 0;
+}
+
+/* All images locked to group */
+.my-image-box img {
+  position: absolute;
+  max-width: none;
+}
+
+
+.Rectangle -bg{
+    position: absolute; 
+    width: 330px; 
+    top: 50px; 
+    margin-right: 60px; 
+    margin-bottom: 0px;
+}
+.boy{
+    position: absolute;
+    width: 370px;
+    height: 400px;
+    left: 35px;
+    top: -40px;
+   
+}
+
+.singles{
+    position: absolute;
+    width: 338px;
+    height: 118px;
+    left: 84px;
+    top: 280px;
+   
+}
+
+.visualize{
+    position: absolute;
+    width: 138px;
+    height: 58px;
+    left: 270px;
+    top: 30px;
+   
+}
+.Rectangle-yellow{
+    position: absolute;
+    width: 58px;
+    height: 48px;
+   left: -10px;
+   top: 280px;
+   
+   }
+.Orange{
+    position: absolute;
+    width: 58px;
+    height: 48px;
+   left: -20px;
+   top: 20px;
+   
+}
+
+/*******
+ text-section *********/
+
+.coursestext-container{
+    width: 80%;
+        position: relative;
+        background-color: rgba(255, 242, 243, 1);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 180px;
+        width: 800px;
+    height: 160px;
+    max-width: 80%;
+    justify-content: left;
+    margin-left: 40px;
+    background-color: #F6BE00;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    border-radius: 10px 100px / 120px 100px;
+    border-color: rgb(173, 169, 172);
+    box-shadow: rgba(211, 29, 29, 0.815) 0px 2px 4px, rgb(155, 8, 8) 0px 7px 13px -3px, rgb(184, 8, 8) 0px -3px 0px inset;
+        
+}
+.courses-content{
+    margin-left: 50px;
+}
+/*******
+courses-section *********/
+.courses-section {
+    width: 100%;
+    background-color: rgba(238, 139, 247, 0.253);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.courses-section h2 {
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #0a3d62;
+}
+
+.card-container {
+    width: 100%;
+    height: auto;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 columns */
+    gap: 25px;
+}
+
+.card {
+    position: relative;
+    width: 320px;              /* 🔥 IMPORTANT */
+    height: 630px;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: rgba(211, 29, 29, 0.815) 0px 2px 4px, rgb(155, 8, 8) 0px 7px 13px -3px, rgb(184, 8, 8) 0px -3px 0px inset;
+    transition: transform 0.2s ease;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline for links */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.card:hover {
+     transform: translateY(-5px);
+}
+  
+
+.card img {
+    width: 90%;
+    height: 250px;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card h4 {
+    padding-left: 10px;
+    text-align: left;
+    padding-bottom: 10px;
+    margin: 15px;
+    color: rgba(150, 187, 124, 1);
+    z-index: 2; /* Lowest: will be at the bottom */
+    
+}
+.card h5{
+    text-align: left;
+    padding-left: 10px;
+    margin: 15px 0 5px;
+    color: #0a3d62;
+    z-index: 2; /* Lowest: will be at the bottom */
+}
+
+.card p {
+    padding-top: 0;
+    text-align: left;
+    padding: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+
+    
+.card .overlap-image {
+    /* Position images absolutely to take them out of the normal document flow */
+    position: absolute;
+     border-radius: 10px;
+    
+}
+
+/* Specific z-index values */
+#overlap-image1 {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    margin-top: 10px;
+    left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    z-index: 0; /* Lowest: will be at the bottom */
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+       
+}
+
+#overlap-image2 {
+    width: 110px;
+    height: 40px;
+    top: 20px;
+    left: 20px;
+    position: absolute;
+    border-radius: 3px;
+    padding-right: 10%;
+    padding-left: 10px;
+    z-index: 1; /* Middle: will be above Image 1 */
+}
+
+#overlap-image3 {
+    width: 48px;
+    height: 46px;
+    border-radius: 50%;
+    position: absolute;
+    border-width: 40px;
+    border-color: rgba(189, 189, 189, 1);
+    top: 230px;
+    left: 80px;
+    z-index: 2; /* Highest: will be at the top */
+}
+#overlap-image4 {
+    width: 48px;
+    height: 46px;
+    border-radius: 50%;
+    position: absolute;
+    border-width: 40px;
+    border-color: rgba(189, 189, 189, 1);
+    top: 230px;
+    left: 140px;
+    z-index: 3; /* Highest: will be at the top */
+}
+#overlap-image5 {
+    width: 48px;
+    height: 46px;
+    border-radius: 50%;
+    position: absolute;
+    border-width: 40px;
+    border-color: rgba(189, 189, 189, 1);
+    top: 230px;
+    left: 200px;
+    z-index: 3; /* Highest: will be at the top */
+}
+
+.Price-content{
+  
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    margin-top: 0px;
+
+
+}
+
+.green-outline-btn {
+    margin-right: 130px;
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        text-align: left;
+        color: green; /* Green text */
+        border: 4px solid green; /* Green border */
+        background-color: transparent; /* Transparent background */
+        border-radius: 20px; /* Rounded corners */
+        cursor: pointer;
+        text-decoration: none; /* Remove underline for links */
+        transition: all 0.3s ease; /* Smooth hover effect */
+    }
+
+    /* Hover effect */
+    .green-outline-btn:hover {
+        background-color: green; /* Fill green on hover */
+        color: white; /* White text on hover */
+    }
+   .title-row {
+  display: flex;
+  align-items: center;
+  gap: 60px;  /* 👈 THIS creates 50px space */
+}
+
+.title-row h4 {
+  margin: 0;
+
+}
+
+/* Your badge CSS */
+.rating-badge {
+  width: 50px;
+  height: 26px;
+  background-color: black;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-family: Arial, sans-serif;
+}
+
+.star {
+  color: gold;
+  font-size: 14px;
+}
+
+.rating-text {
+  color: white;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+
+            
+            /*******
+            Designer section *********/
+        .designer-section {
+    width: 100%;
+    background-color: rgba(16, 17, 110, 0.253);
+    padding: 60px 20px;
+    text-align: center;
+    width: 80%;
+        display: grid;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+       
+        grid-template-columns: repeat(3, 228px);
+        display: inline-block;
+      
+}
+
+        .designertext-container {
+        background-color: rgba(255, 255, 255, 1);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 80px;
+        margin-bottom: 100px;
+        width: 800px;
+    height: 160px;
+    max-width: 80%;
+    display: flex;
+    justify-content: left;
+    margin-left: 50px;
+    background-color: #F6BE00;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    border-radius: 10px 100px / 120px 100px;
+    border-color: rgb(173, 169, 172);
+    box-shadow:rgba(211, 29, 29, 0.815) 0px 2px 4px, rgb(155, 8, 8) 0px 7px 13px -3px, rgb(184, 8, 8) 0px -3px 0px inset;
+    }
+        
+        
+           
+
+      
+    .designer-card{
+       
+        background: rgba(194, 186, 186, 0.301);
+        width: 250px;
+        height: 410px;
+        border-radius: 16px;
+        box-shadow: rgba(211, 29, 29, 0.815) 0px 2px 4px, rgb(155, 8, 8) 0px 7px 13px -3px, rgb(184, 8, 8) 0px -3px 0px inset;
+        flex-direction: row;     
+        margin-left: 70px;
+        align-items: center;
+        display: inline-block;
+        justify-content: center;
+        padding: 10px;
+        margin-bottom: 20px;
+      
+     
+       
+   
+}
+    .designer-image{
+        
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        flex: 1;
+        display: flex;
+        column-gap: 10px;
+        margin-top: 20px;
+        justify-content: center;
+        flex-direction: row;   /* Stack image above text */
+        display: inline;      
+        text-align: center;
+        padding-top: 20px;
+        padding-left: 20px;
+   
+    
+    }
+    .designer-content{
+    margin-top: 20px;
+    text-align: center;
+    padding-left: 40px;
+    justify-content:baseline;    }
+
+    .center{
+        text-align: center;
+        width: 140px;
+        padding-left: 10px;
+        padding-top: 20px;
+
+    }
+    /*******
+            professiontext-container *********/
+    .profession-section{
+        background-color: #F6BE00;
+    }
+    .professiontext-container{
+    width: 600px;
+    height: 160px;
+    max-width: 80%;
+    display: flex;
+    justify-content: left;
+    margin-left: 50px;
+    background-color: #F6BE00;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    border-radius: 10px 100px / 120px 100px;
+    border-color: rgb(173, 169, 172);
+    box-shadow:rgba(211, 29, 29, 0.815) 0px 2px 4px, rgb(155, 8, 8) 0px 7px 13px -3px, rgb(184, 8, 8) 0px -3px 0px inset;
+
+    }
+    .profession-content{
+    width: 80%;
+    height: auto;
+    margin-left: 90px;
+    margin-top: -20px;
+
+   }
+    /*******
+            courses-container *********/
+.profession-container{
+    display: grid;
+    grid-template-columns: repeat(4, 208px);  /* exact card width */
+    column-gap: 0px;                                /* space between cards */
+    width: 100%;
+    justify-content: center;                  /* THIS centers the whole grid */
+    background-color:rgba(255, 255, 255, 1);
+    margin-left: 80px;
+}
+
+
+.profession-card{
+   gap: 5px;
+    width: 195px;
+    height: 355px;
+    background-color: rgb(207, 241, 196);
+    text-align: center;
+    border-radius: 10px;
+    flex-direction: row;
+    border-width: 40px;
+    border-color: #0a3d62;
+    box-shadow: rgba(211, 29, 29, 0.815) 0px 2px 4px, rgb(155, 8, 8) 0px 7px 13px -3px, rgb(184, 8, 8) 0px -3px 0px inset;
+    border-radius: 20px;
+       
+}
+.img-div img{
+    width: 180px;
+    height: 231px;
+    border-radius: 10px;
+    margin-top: 5px;
+    padding-bottom: 20px;
+}
+.img-div{
+    background-color: rgb(234, 233, 241);
+    height: 220px;
+}
+.card p{
+    font-size: 13px;
+    color: black;
+
+}
+.icon{
+    font-size: 37px;
+    margin: 20px;
+    }
+
+.icon i{
+    margin: inline;
+    }
+
+ /*******
+            subscribe-section *********/
+       .subscribe-section {
+        background-color: aquamarine;
+
+       }     
+    .newsletter-container{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    margin-inline: 10px;
+    background-color: rgba(255, 255, 255, 1);
+
+}
+
+.newsletter-content{
+    width: 600px;
+    height: 130px;
+    display: inline-block;
+    background-color: #F6BE00;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-width: 100px;
+    border-radius: 10px 100px / 120px 100px;
+    border-color: rgb(223, 49, 165);
+    box-shadow: rgba(211, 29, 29, 0.815) 0px 2px 4px, rgb(155, 8, 8) 0px 7px 13px -3px, rgb(184, 8, 8) 0px -3px 0px inset;
+    top: 50%;
+    left: 50%;
+
+}
+.newsletter-form{
+    margin-top: 300px;
+    padding: 20px;
+    background-color: #F6BE00;
+    position: absolute;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px 100px / 120px 100px;
+    border-color:  #F6BE00;
+    box-shadow: rgba(211, 29, 29, 0.815) 0px 2px 4px, rgb(155, 8, 8) 0px 7px 13px -3px, rgb(184, 8, 8) 0px -3px 0px inset;
+    }
+    ::placeholder {
+color: red;
+opacity: 1; /* Ensures full visibility in Firefox */
+}
+input::placeholder {
+color: red;
+opacity: 1; /* For Firefox */
+} 
+
+ input:placeholder-shown {
+        border: 1px solid #095484;
+      }
+    .highlight-text {
+   display: inline-block; /* Shrinks to fit text */
+   background-color: rgb(130, 29, 161); /* Background only around text */
+   border: none; /* Optional: remove default border */
+   padding: 5px; /* Optional: spacing around text */
+   width: auto; /* Prevents full-width expansion */
+}
+
+input[type="text"] {
+width: 400px; /* Set fixed width */
+padding: 8px; /* Add inner spacing */
+box-sizing: border-box; /* Include padding in total width */
+}
+
+   
+    
